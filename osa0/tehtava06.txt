@@ -1,0 +1,8 @@
+note over selain: Käyttäjä painaa kaavion tallenna-painiketta.
+note over selain: Tapahtumakäsittelijä piirtää muistiinpanot uudestaan
+note over selain: Tapahtumakäsittelijä lähettää uuden muistiinpanon JSON-muodossa palvelimelle
+
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+note over palvelin: Palvelin vastaa kyselyyn, ei uudelleenohjaa
+palvelin-->selain: 201 created
